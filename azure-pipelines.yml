@@ -11,18 +11,20 @@ pool: #Default
  #vmImage: 'windows-2022'
 
 variables:
-- group: Talend-Cloud-Variables
+- group: Talend-Cloud-Variables-Sample
 #Variable corresponding to the ci builder version you want to use to build.
 - name: builder-maven-version
   value: 8.0.12
 #Variable corresponding to the Talend project name.
 - name: project_name
-  value: 'AZURE_PROJECT'
+  value: 'SAMPLE'
 #Variable corresponding to the specific artifact you want to build. Define it as a variable in the GUI so it can be overwritten at runtime. If you don't use it, all existing artifacts in your project will be executed and published.
 #- name: jobs_to_build
-#  value: 'jobs/process/job1_0.1'
+#  value: 'XXX'
 #- name: environment
-#  value: 'Test'
+#  value: 'XXX'
+#-name: 'talend_cloud_token'
+#  value: 'xxx'
 
 - name: talend_ci_config
   value: >-
@@ -34,7 +36,7 @@ variables:
     -Dcloud.token=$(talend_cloud_token)
     -Dcloud.publisher.screenshot=true
     -Dcloud.publisher.environment=$(environment)
-    -Dcloud.publisher.workspace=Azure_Project
+    -Dcloud.publisher.workspace=Sample
     
  #-Dstudio.encryption.keys.file=$(studio_keys.secureFilePath)
 
