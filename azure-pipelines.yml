@@ -20,9 +20,9 @@ variables:
   value: 'SAMPLE'
 #Variable corresponding to the specific artifact you want to build. Define it as a variable in the GUI so it can be overwritten at runtime. If you don't use it, all existing artifacts in your project will be executed and published.
 #- name: jobs_to_build
-#  value: 'jobs/process/job1_0.1'
+#  value: 'XXX'
 #- name: environment
-#  value: 'Test'
+#  value: 'XXX'
 #-name: 'talend_cloud_token'
 #  value: 'xxx'
 
