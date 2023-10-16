@@ -11,7 +11,7 @@ pool: #Default
  #vmImage: 'windows-2022'
 
 variables:
-- group: Talend-Cloud-Variables
+- group: Talend-Cloud-Variables-Sample
 #Variable corresponding to the ci builder version you want to use to build.
 - name: builder-maven-version
   value: 8.0.12
@@ -23,6 +23,8 @@ variables:
 #  value: 'jobs/process/job1_0.1'
 #- name: environment
 #  value: 'Test'
+#-name: 'talend_cloud_token'
+#  value: 'xxx'
 
 - name: talend_ci_config
   value: >-
